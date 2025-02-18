@@ -1,0 +1,61 @@
+@use "../../../styleVariables.scss" as SV;
+
+.container {
+    padding: 0 100px;
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: SV.$bg;
+
+    .text {
+        color: SV.$text-color;
+        line-height: 2.0rem;
+        width: 50%;
+        h2 {
+            font-family: "Poppins";
+            font-size: 24px;
+            font-weight: SV.$semi-bold;
+        }
+
+        h3 {
+            font-family: "Inter";
+            font-size: 1.1rem;
+        }
+
+        pre {
+            font-family: "Inter";
+            font-size: 1rem;
+            font-weight: SV.$regular;
+            width: 100%;
+            text-wrap: stable;
+        }
+    }
+
+    div.image {
+        height: 500px;
+        width: 40%;
+        float: right;
+    }
+}
+
+:host ::ng-deep p-galleria div {
+    font-family: "Poppins";
+
+    p {
+        font-family: "Inter";
+    }
+}
+:host ::ng-deep p-galleriaitemslot.p-galleria-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+:host ::ng-deep div.p-galleria-thumbnail-items img {
+    height: 100px !important;
+}
+
+:host ::ng-deep .p-galleria-indicator-active .p-galleria-indicator-button {
+    background-color: SV.$sixty;
+}
+

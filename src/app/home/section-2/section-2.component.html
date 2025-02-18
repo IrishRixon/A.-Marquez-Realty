@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="text">
+    <h2>Welcome to A. Marquez Realty</h2>
+
+    <h3>Search a wide variety of real estate properties for sale</h3>
+
+    <pre>
+Lorem ipsum odor amet, consectetuer adipiscing elit. Facilisi sit netus hendrerit sociosqu platea hendrerit natoque. 
+Hendrerit phasellus elementum sollicitudin iaculis mauris hendrerit dolor habitant. Dolor elementum ultricies pretium lacinia 
+pretium aliquam curabitur. Ad class a turpis bibendum netus interdum nostra iaculis. Nascetur maecenas nunc ex arcu a. 
+
+Cubilia arcu blandit tellus vel purus consectetur porttitor vehicula. Et risus convallis sit nec euismod pellentesque lobortis. 
+Eros taciti justo mollis litora torquent interdum. Aptent varius magna scelerisque volutpat dis suspendisse accumsan. Eleifend 
+    
+volutpat magnis non felis; fermentum porttitor. Facilisi nulla nulla convallis vel erat bibendum molestie scelerisque. 
+Laoreet habitant laoreet donec id quam erat finibus. Quis rhoncus ultricies litora, convallis sit nullam orci.
+        </pre
+    >
+  </div>
+
+  <div class="image">
+    <p-galleria
+      [value]="images"
+      [responsiveOptions]="responsivenessOptions"
+      [containerStyle]="{ 'max-width': '640px' }"
+      [numVisible]="5"
+      [showIndicators]="true"
+      [showThumbnails]="false"
+      [showItemNavigators]="true"
+      [autoPlay]="true"
+      [circular]="true"
+      [shouldStopAutoplayByClick]="false"
+    >
+      <ng-template #item let-item>
+        <img [src]="item.itemImageSrc" style="width: 100%; display: block" />
+      </ng-template>
+      <ng-template #thumbnail let-item>
+        <img [src]="item.thumbnailImageSrc" style="display: block" />
+      </ng-template>
+      <ng-template #caption let-item>
+        <div class="text-xl mb-2 font-bold">{{ item.title }}</div>
+        <p class="text-white">{{ item.alt }}</p>
+      </ng-template>
+    </p-galleria>
+  </div>
+</div>

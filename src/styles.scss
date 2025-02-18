@@ -1,1 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+@use "./styleVariables.scss" as styleVariables;
+
+@font-face {
+    font-family: 'Lucida';
+    src: url('/assets/fonts/lucida-handwriting/Lucida Handwriting Italic.ttf') format(truetype);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-Bold.ttf') format(truetype);
+    font-weight: styleVariables.$bold;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-SemiBold.ttf') format(truetype);
+    font-weight: styleVariables.$semi-bold;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-Medium.ttf') format(truetype);
+    font-weight: styleVariables.$medium;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-Regular.ttf') format(truetype);
+    font-weight: styleVariables.$regular;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-Light.ttf') format(truetype);
+    font-weight: styleVariables.$light;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format(truetype);
+}
+
+@font-face {
+    font-family: 'Playfair';
+    src: url('/assets/fonts/Playfair/Playfair-VariableFont_opsz,wdth,wght.ttf') format(truetype);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

@@ -1,0 +1,42 @@
+@use "../../../styleVariables.scss" as SV;
+
+nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 90px;
+    box-sizing: border-box;
+    background-color: SV.$sixty;
+    transition: background-color 0.5s;
+
+    h1 {
+        font-family: "Playfair";
+        font-weight: SV.$bold;
+        font-size: 28px;
+        color: SV.$bg;
+    }
+
+    ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        padding: 0px;
+
+        li {
+            font-family: 'Inter';
+            font-weight: SV.$semi-bold;
+            font-size: 14px;
+            color: SV.$bg;
+        }
+    }
+}
+
+nav.transparent {
+    background-color: #0047ab43;
+}
+
+nav.fully-visible {
+    background-color: #0047abe9 !important;
+}
