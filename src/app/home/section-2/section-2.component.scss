@@ -11,15 +11,24 @@
         color: SV.$text-color;
         line-height: 2.0rem;
         width: 50%;
-        h2 {
+
+        .welcome {
+            display: flex;
             font-family: "Poppins";
-            font-size: 24px;
+            font-size: 1.875rem;
             font-weight: SV.$semi-bold;
+            gap: 8px;
+
+            span {
+                color: SV.$sixty;
+            }
         }
 
         h3 {
             font-family: "Inter";
             font-size: 1.1rem;
+            margin-bottom: 30px;
+            margin-top: 5px;
         }
 
         pre {
@@ -36,6 +45,11 @@
         width: 40%;
         float: right;
     }
+}
+
+
+:host ::ng-deep p-galleria {
+    z-index: 0;
 }
 
 :host ::ng-deep p-galleria div {

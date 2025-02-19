@@ -1,6 +1,6 @@
 <div class="wrapper">
   <div class="text">
-    <h2>Welcome to A. Marquez Realty</h2>
+    <div class="welcome"><h2>Welcome to </h2><span>A. Marquez Realty</span></div>
 
     <h3>Search a wide variety of real estate properties for sale</h3>
 
@@ -38,8 +38,8 @@ Laoreet habitant laoreet donec id quam erat finibus. Quis rhoncus ultricies lito
         <img [src]="item.thumbnailImageSrc" style="display: block" />
       </ng-template>
       <ng-template #caption let-item>
-        <div class="text-xl mb-2 font-bold">{{ item.title }}</div>
-        <p class="text-white">{{ item.alt }}</p>
+        <div class="">{{ item.title }}</div>
+        <p class="">{{ item.alt }}</p>
       </ng-template>
     </p-galleria>
   </div>
