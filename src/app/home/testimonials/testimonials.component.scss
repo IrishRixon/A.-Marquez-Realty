@@ -1,0 +1,68 @@
+@use "../../../styleVariables.scss" as SV;
+
+article {
+  padding: 100px 100px 50px 100px;
+  background-color: SV.$bg;
+  font-family: "Inter";
+  font-size: 1rem;
+  color: SV.$text-color;
+
+  div.testimonial {
+    width: 329px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 32px;
+    background: #f8f9fa;
+    box-shadow: 35px 35px 70px #c9cacb, -35px -35px 70px #ffffff;
+
+    span {
+        font-size: 40px;
+    }
+
+    span.quote-icon-1 {
+        rotate: 180deg;
+        display: flex;
+        justify-content: end;
+    }
+
+    span.quote-icon-2 {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+    }
+  }
+
+  .content {
+    padding: 20px;
+
+    p {
+        text-align: center;
+        font-style: italic;
+    }
+  }
+
+  .person {
+    height: auto;
+    display: flex;
+    gap: 1rem;
+    padding-top: 15px;
+    border-top: 1px solid grey;
+    font-size: 0.9rem;
+
+    .image {
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            object-fit: cover;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+        }
+    }
+  }
+}
