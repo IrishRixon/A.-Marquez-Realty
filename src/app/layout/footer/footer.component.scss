@@ -1,0 +1,42 @@
+@use '../../../styleVariables.scss' as SV;
+
+.wrapper {
+    height: 300px;
+    background-color: SV.$nav;
+    width: 100%;
+    font-family: 'Inter';
+    color: SV.$bg;
+    position: relative;
+
+    .logo, .contact-us, .follow-us {
+        z-index: 2;
+    } 
+
+    h1 {
+        font-family: "Lucida";
+        font-size: 2.2rem;
+        font-weight: SV.$semi-bold;
+    }
+    h2 {
+        font-family: 'Poppins';
+        font-size: 1.9rem;
+        font-weight: SV.$medium;
+    }
+
+    span, .follow-us a {
+        font-size: 1.6rem;
+    }
+    
+    p {
+        font-size: 1.1rem;
+    }
+
+    img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        object-fit: cover;
+        filter: opacity(0.1);
+    }
+}

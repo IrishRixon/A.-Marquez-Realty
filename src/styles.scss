@@ -45,21 +45,32 @@
     font-family: 'Playfair';
     src: url('/assets/fonts/Playfair/Playfair-VariableFont_opsz,wdth,wght.ttf') format(truetype);
 }
+
 @layer tailwind-base, primeng, tailwind-utilities;
 
 @layer tailwind-base {
-@tailwind base;
+    @tailwind base;
 }
 
 @layer tailwind-utilities {
-@tailwind components;
-@tailwind utilities;
+    @tailwind components;
+    @tailwind utilities;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }

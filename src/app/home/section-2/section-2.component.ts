@@ -3,10 +3,11 @@ import { GalleriaModule } from 'primeng/galleria';
 import { model } from '@angular/core';
 import { PhotoService } from '../services/photo-service.service';
 import { Option, Photo } from '../interface/photos';
+import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 
 @Component({
   selector: 'app-section-2',
-  imports: [GalleriaModule],
+  imports: [GalleriaModule, AnimateOnScrollModule],
   templateUrl: './section-2.component.html',
   styleUrl: './section-2.component.scss',
   providers: [PhotoService],
