@@ -4,7 +4,10 @@
   <ul>
     <li><a routerLink="/home">HOME</a></li>
     <li><a routerLink="/about">HOUSE AND LOT</a></li>
-    <li><a routerLink="/contact">CONDO</a></li>
+    <li>
+      <p-button label="Condo" (click)="menu.toggle($event)" />
+      <p-tieredmenu #menu [model]="items" [popup]="true" />
+    </li>
     <li><a routerLink="/contact">OTHER PROPERTIES</a></li>
     <li><a routerLink="/contact">INQUIRY</a></li>
   </ul>

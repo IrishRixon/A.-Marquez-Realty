@@ -4,6 +4,7 @@ import { Section2Component } from './section-2/section-2.component';
 import { OurServicesSectionComponent } from './our-services-section/our-services-section.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { EmailFieldComponent } from './email-field/email-field.component';
+import { OurTeamComponent } from './our-team/our-team.component';
 
 @Component({
   selector: 'app-home',
@@ -13,6 +14,7 @@ import { EmailFieldComponent } from './email-field/email-field.component';
     OurServicesSectionComponent,
     TestimonialsComponent,
     EmailFieldComponent,
+    OurTeamComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

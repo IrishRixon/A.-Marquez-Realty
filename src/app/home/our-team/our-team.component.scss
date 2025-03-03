@@ -1,0 +1,9 @@
+@use '../../../styleVariables.scss' as SV;
+
+.bg {
+    background-color: SV.$bg;
+}
+
+img {
+    object-fit: cover;
+}
