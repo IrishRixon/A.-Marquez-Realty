@@ -1,0 +1,71 @@
+@use '../../../../../styleVariables.scss' as SV;
+
+.wrapper {
+    display: flex;
+    background-color: SV.$bg;
+    margin-top: 150px;
+    padding: 0 100px 0 100px;
+    gap: 20px;
+
+    .left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Poppins';
+            font-size: 20px;
+            font-weight: SV.$medium;
+            color: SV.$text-color;
+            align-items: center;
+            height: 30%;
+            width: 300px;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .introducing {
+            font-family: 'Inter';
+            font-size: 1.2rem;
+            color: SV.$sixty;
+            font-weight: SV.$medium;
+        }
+
+        .logo {
+            font-family: 'Inter';
+            text-transform: uppercase;
+            text-align: center;
+            color: #D2B200;
+
+            h1 {
+                font-size: 3rem;
+                font-weight: SV.$light;
+                
+                span {
+                    font-weight: SV.$bold;
+                }
+            }
+            h2 {
+                font-size: 20px;
+                font-weight: SV.$light;
+                letter-spacing: 2px;
+            }
+        }
+    }
+
+    .right {
+        width: 50%;
+
+        img {
+            border-radius: 10px;
+        }
+    }
+}
+
+:host ::ng-deep p-image img {
+    border-radius: 10px;
+}

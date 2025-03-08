@@ -25,10 +25,12 @@ nav {
         padding: 0px;
 
         li {
-            font-family: 'Inter';
+            font-family: "Inter";
             font-weight: SV.$semi-bold;
             font-size: 14px;
             color: SV.$bg;
+            display: flex;
+            flex-direction: column;
         }
     }
 }
@@ -39,4 +41,31 @@ nav.transparent {
 
 nav.fully-visible {
     background-color: #0047abe1 !important;
+}
+
+:host ::ng-deep p-button .p-button-label {
+    text-transform: uppercase;
+    font-family: "Inter";
+    font-weight: SV.$semi-bold;
+    font-size: 14px;
+    color: SV.$bg;
+}
+
+:host ::ng-deep .p-button {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+:host ::ng-deep .p-button:not(:disabled):hover {
+    border: 1px solid SV.$bg;
+}
+:host ::ng-deep p-tieredmenu {
+    position: relative;   
+}
+:host ::ng-deep p-tieredmenu div{
+    top: 0 !important;
+    left: 0 !important;
+}
+:host ::ng-deep .condo p-tieredmenu ul{
+    left: -100% !important;
 }

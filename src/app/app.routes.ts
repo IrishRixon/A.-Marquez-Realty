@@ -5,5 +5,9 @@ export const routes: Routes = [
     {
         path: '',
         component: HomeComponent
+    },
+    {
+        path: 'condo/sanfernando',
+        loadChildren: () => import('./condoModules/san-fernando/san-fernando.module').then((m) => m.SanFernandoModule)
     }
 ];

@@ -1,0 +1,40 @@
+@use '../../../../../styleVariables.scss' as SV;
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    padding: 50px 100px 0 100px;
+    background-color: SV.$bg;
+
+    .image {
+        width: 50%;
+    }
+
+    .text {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        h1 {
+            font-family: 'Poppins';
+            font-size: 1.875rem;
+            font-weight: SV.$bold;
+            color: #D2B200;
+        }
+
+        p {
+            font-family: 'Inter';
+            color: SV.$text-color;
+        }
+    }
+}
+
+:host ::ng-deep p-image {
+    display: flex;
+    width: 70%;
+}
+
+:host ::ng-deep p-image img {
+    border-radius: 10px;
+}

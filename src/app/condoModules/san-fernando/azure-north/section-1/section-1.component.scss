@@ -1,0 +1,59 @@
+@use '../../../../../styleVariables.scss' as SV;
+
+.wrapper {
+    height: 600px;
+    width: 100%;
+    position: relative;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .text-1 {
+        position: absolute;
+        top: 21%;
+        left: 8%;
+        font-family: 'Poppins';
+        font-size: 34px;
+        font-weight: SV.$bold;
+        color: SV.$bg;
+        text-shadow: 1px 1px 5px SV.$text-color;
+        z-index: 2;
+
+        span {
+            font-family: 'Pacifio';
+            color: #FFEB3B;
+            text-shadow: none;
+            -webkit-text-stroke: 0.01px SV.$text-color;
+        }
+    }
+
+    // .text-2 {
+    //     position: absolute;
+    //     top: 30%;
+    //     left: 30%;
+    //     font-family: 'Poppins';
+    //     font-size: 34px;
+    //     font-weight: SV.$bold;
+    //     color: SV.$bg;
+    //     text-shadow: 1px 1px 5px SV.$text-color;
+
+    //     span {
+    //         font-family: 'Pacifio';
+    //         color: #FFEB3B;
+    //         text-shadow: none;
+    //         -webkit-text-stroke: 0.01px SV.$text-color;
+    //     }
+    // }
+
+    .filter {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.063);
+        position: absolute;
+        z-index: 1;
+        top: 0;
+    }
+}

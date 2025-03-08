@@ -7,38 +7,46 @@ import { MenuItem } from 'primeng/api';
 import { TieredMenu } from 'primeng/tieredmenu';
 import { ButtonModule } from 'primeng/button';
 import { ItemsService } from './services/items/items.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   imports: [TieredMenuModule, ButtonModule],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss'
+  styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
-
   constructor(
-    private scrollDispatcher: ScrollDispatcher, 
+    private scrollDispatcher: ScrollDispatcher,
     private viewportScroller: ViewportScroller,
     private renderer: Renderer2,
-    private itemsService: ItemsService
+    private itemsService: ItemsService,
+    private router: Router
   ) {}
 
   @ViewChild('nav') nav!: ElementRef;
 
-  items!: MenuItem[];
+  condoItems!: MenuItem[];
 
   navColorBasedOnScroll() {
-    this.scrollDispatcher.scrolled().subscribe(() => {{
-      const scrollPosition = this.viewportScroller.getScrollPosition();
-      const verticalPosition = scrollPosition[1];
+    this.scrollDispatcher.scrolled().subscribe(() => {
+      {
+        const scrollPosition = this.viewportScroller.getScrollPosition();
+        const verticalPosition = scrollPosition[1];
 
-      if(verticalPosition >= 70) {
-        this.renderer.addClass(this.nav.nativeElement, 'fully-visible');
+        if (verticalPosition >= 70) {
+          this.renderer.addClass(this.nav.nativeElement, 'fully-visible');
+        } else {
+          this.renderer.removeClass(this.nav.nativeElement, 'fully-visible');
+        }
       }
-      else {
-        this.renderer.removeClass(this.nav.nativeElement, 'fully-visible');
-      }
-    }});
+    });
+  }
+
+  navigateToHome() {
+    this.router.navigateByUrl('/').catch((err) => {
+      console.log(err);
+    });
   }
 
   ngAfterViewInit(): void {
@@ -46,6 +54,6 @@ export class NavbarComponent {
   }
 
   ngOnInit(): void {
-    this.items = this.itemsService.items;
+    this.condoItems = this.itemsService.condoItems;
   }
 }

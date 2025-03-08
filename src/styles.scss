@@ -1,10 +1,6 @@
 @use "./styleVariables.scss" as styleVariables;
 @import "primeicons/primeicons.css";
 
-@font-face {
-    font-family: 'Lucida';
-    src: url('/assets/fonts/lucida-handwriting/Lucida Handwriting Italic.ttf') format(truetype);
-}
 
 @font-face {
     font-family: 'Poppins';
@@ -44,6 +40,11 @@
 @font-face {
     font-family: 'Playfair';
     src: url('/assets/fonts/Playfair/Playfair-VariableFont_opsz,wdth,wght.ttf') format(truetype);
+}
+
+@font-face {
+    font-family: 'Pacifio';
+    src: url('/assets/fonts/Pacifio/Pacifico-Regular.ttf') format(truetype);
 }
 
 @layer tailwind-base, primeng, tailwind-utilities;
