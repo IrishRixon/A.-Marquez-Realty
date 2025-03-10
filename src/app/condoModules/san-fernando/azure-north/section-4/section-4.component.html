@@ -1,0 +1,31 @@
+<div class="wrapper">
+  <div
+    class="carousel"
+    pAnimateOnScroll
+    enterClass="animate-enter fade-in-10 slide-in-from-b-8 animate-duration-1000"
+    leaveClass="animate-leave fade-out-0"
+  >
+    <p-carousel
+      [value]="products"
+      [numVisible]="3"
+      [numScroll]="3"
+      [circular]="true"
+      [responsiveOptions]="responsiveOptions"
+      [autoplayInterval]="3000"
+    >
+      <ng-template let-product #item>
+        <div class="border border-surface rounded-border m-2 p-4">
+          <div class="mb-4">
+            <div class="relative mx-auto">
+              <img
+                [src]="product.image"
+                [alt]="product.name"
+                class="w-full rounded-border"
+              />
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>
+</div>
