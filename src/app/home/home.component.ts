@@ -5,6 +5,7 @@ import { OurServicesSectionComponent } from './our-services-section/our-services
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { EmailFieldComponent } from './email-field/email-field.component';
 import { OurTeamComponent } from './our-team/our-team.component';
+import Lenis from 'lenis';
 
 @Component({
   selector: 'app-home',
@@ -19,4 +20,11 @@ import { OurTeamComponent } from './our-team/our-team.component';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent {}
+export class HomeComponent {
+  ngAfterViewInit(): void {
+    // Initialize Lenis
+    const lenis = new Lenis({
+      autoRaf: true,
+    });
+  }
+}

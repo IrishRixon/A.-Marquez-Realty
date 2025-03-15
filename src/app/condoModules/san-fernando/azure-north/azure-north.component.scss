@@ -1,5 +1,69 @@
-@use '../../../../styleVariables.scss' as SV;
+@use "../../../../styleVariables.scss" as SV;
 
 .wrapper {
     background-color: SV.$bg;
+
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+
+        .left {
+            width: 50%;
+        }
+
+        .right {
+            width: 50%;
+            padding: 0 50px 20px 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            overflow-y: scroll;
+
+            h1 {
+                font-family: "Poppins";
+                font-size: 1.5rem;
+                font-weight: SV.$bold;
+                color: SV.$old-gold;
+            }
+
+            p {
+                font-family: "Inter";
+                font-size: 1rem;
+                font-weight: SV.$medium;
+                text-align: justify;
+                color: SV.$text-color;
+                line-height: 2rem;
+            }
+        }
+    }
+}
+
+:host ::ng-deep .ul-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+:host ::ng-deep .ul-list.disc {
+    list-style: disc;
+}
+
+:host ::ng-deep p-image {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+:host ::ng-deep p-image span {
+    height: 100%;
+    width: 100%;
+}
+
+:host ::ng-deep p-image img {
+    border-radius: 5px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    max-height: 800px;
 }

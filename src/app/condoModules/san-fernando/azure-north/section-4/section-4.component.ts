@@ -1,47 +1,55 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { ProductsService } from './service/products.service';
 import { Product } from './interface/product';
 
 @Component({
-  selector: 'app-section-4',
-  standalone: false,
-  templateUrl: './section-4.component.html',
-  styleUrl: './section-4.component.scss'
+    selector: 'app-section-4',
+    standalone: false,
+    templateUrl: './section-4.component.html',
+    styleUrl: './section-4.component.scss'
 })
 export class Section4Component {
-  constructor(private productService: ProductsService) {}
+    constructor(private productService: ProductsService) { }
 
-  products!: Product[];
+    @Output() selectedProduct: EventEmitter<Product> = new EventEmitter<Product>;
 
-  responsiveOptions: any[] | undefined;
+    products!: Product[];
 
-  ngOnInit() {
-    this.productService.getProductsSmall().then((products) => {
-        this.products = products;
-    });
+    responsiveOptions: any[] | undefined;
 
-   this.responsiveOptions = [
-        {
-            breakpoint: '1400px',
-            numVisible: 2,
-            numScroll: 1
-        },
-        {
-            breakpoint: '1199px',
-            numVisible: 3,
-            numScroll: 1
-        },
-        {
-            breakpoint: '767px',
-            numVisible: 2,
-            numScroll: 1
-        },
-        {
-            breakpoint: '575px',
-            numVisible: 1,
-            numScroll: 1
-        }
-    ]
-}
+    selected!: Product;
+
+    emitSelectedProduct(product: Product) {
+        this.selectedProduct.emit(product);
+    }
+
+    ngOnInit() {
+        this.productService.getProductsSmall().then((products) => {
+            this.products = products;
+        });
+
+        this.responsiveOptions = [
+            {
+                breakpoint: '1400px',
+                numVisible: 2,
+                numScroll: 1
+            },
+            {
+                breakpoint: '1199px',
+                numVisible: 3,
+                numScroll: 1
+            },
+            {
+                breakpoint: '767px',
+                numVisible: 2,
+                numScroll: 1
+            },
+            {
+                breakpoint: '575px',
+                numVisible: 1,
+                numScroll: 1
+            }
+        ]
+    }
 
 }

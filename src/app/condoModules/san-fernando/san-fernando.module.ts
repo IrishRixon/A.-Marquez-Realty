@@ -12,6 +12,9 @@ import { Section4Component } from './azure-north/section-4/section-4.component';
 import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
 import { TagModule } from 'primeng/tag';
+import { DialogModule } from 'primeng/dialog';
+import { SkeletonModule } from 'primeng/skeleton';
+import { YoutubeComponent } from './azure-north/youtube/youtube.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,7 @@ import { TagModule } from 'primeng/tag';
     Section2Component,
     Section3Component,
     Section4Component,
+    YoutubeComponent,
   ],
   imports: [
     CommonModule,
@@ -28,7 +32,9 @@ import { TagModule } from 'primeng/tag';
     ImageModule,
     CarouselModule,
     ButtonModule,
-    TagModule
+    TagModule,
+    DialogModule,
+    SkeletonModule
   ],
 })
 export class SanFernandoModule {}

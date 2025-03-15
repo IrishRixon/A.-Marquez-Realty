@@ -12,6 +12,24 @@
     object-fit: cover;
 }
 
+:host ::ng-deep p-carousel .per-carousel{
+    position: relative;
+}
+
 :host ::ng-deep .p-carousel-indicator-active .p-carousel-indicator-button {
     background-color: SV.$sixty;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.052);
 }

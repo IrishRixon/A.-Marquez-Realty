@@ -13,17 +13,18 @@
       [responsiveOptions]="responsiveOptions"
       [autoplayInterval]="3000"
     >
-      <ng-template let-product #item>
-        <div class="border border-surface rounded-border m-2 p-4">
+      <ng-template let-product #item inert>
+        <div class="border border-surface rounded-border m-2 p-4 per-carousel">
           <div class="mb-4">
             <div class="relative mx-auto">
               <img
                 [src]="product.image"
-                [alt]="product.name"
+                [alt]="product.head"
                 class="w-full rounded-border"
               />
             </div>
           </div>
+          <button type="button" class="carousel-button" (click)="emitSelectedProduct(product)"></button>
         </div>
       </ng-template>
     </p-carousel>
