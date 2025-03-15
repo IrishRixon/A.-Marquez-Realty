@@ -1,0 +1,64 @@
+<article>
+    <div
+      class="text-wrapper"
+      pAnimateOnScroll
+      enterClass="animate-enter fade-in-10 slide-in-from-l-8 animate-duration-1000"
+      leaveClass="animate-leave fade-out-0"
+    >
+      <div class="text">
+        <h1><span>Interested</span> in owning a Property?</h1>
+        <h2>Inquire to us, <span>Now</span></h2>
+      </div>
+    </div>
+  
+    <div class="wrapper">
+      <div
+        class="card"
+        pAnimateOnScroll
+        enterClass="animate-enter fade-in-10 zoom-in-50 animate-duration-1000"
+        leaveClass="animate-leave fade-out-0"
+      >
+        <div class="bg" [formGroup]="emailContent">
+          <p-floatlabel variant="in">
+            <input
+              pInputText
+              id="in_label"
+              [fluid]="true"
+              formControlName='name'
+              autocomplete="off"
+            />
+            <label for="in_label">Name</label>
+          </p-floatlabel>
+  
+          <p-floatlabel variant="in">
+            <input
+              pInputText
+              [fluid]="true"
+              id="in_label"
+              formControlName="email"
+              autocomplete="off"
+            />
+            <label for="in_label">Email</label>
+          </p-floatlabel>
+  
+          <p-floatlabel variant="in">
+            <textarea
+              pTextarea
+              id="over_label"
+              [fluid]="true"
+              formControlName="message"
+              rows="5"
+              cols="30"
+              style="resize: none"
+              class="h-full"
+            ></textarea>
+            <label for="in_label">Message</label>
+          </p-floatlabel>
+  
+          <p-button label="Submit" [fluid]="true" size="large" (onClick)="onSubmit()"/>
+        </div>
+        <div class="blob"></div>
+      </div>
+    </div>
+  </article>
+  

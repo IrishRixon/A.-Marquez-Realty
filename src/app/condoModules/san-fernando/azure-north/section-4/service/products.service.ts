@@ -73,6 +73,15 @@ AMENITIES`,
         <li>Clubhouse</li>
     </ul>`,
     },
+    {
+      image: '/assets/images/azure/21.jpg',
+      head: `THE RESORT RESIDENCES AT
+ AZURE NORTH`,
+      body: ` Three majestic towers that stand 
+like mighty sentinels over the 
+secret beach cove and the entire 
+development.<br><br>- Monaco Tower <br>- Bali Tower <br>- Barbados Tower`
+    }
   ];
 
   getProductsSmall(): Promise<Product[]> {

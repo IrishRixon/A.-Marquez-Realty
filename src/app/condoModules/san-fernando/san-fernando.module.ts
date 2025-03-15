@@ -15,6 +15,11 @@ import { TagModule } from 'primeng/tag';
 import { DialogModule } from 'primeng/dialog';
 import { SkeletonModule } from 'primeng/skeleton';
 import { YoutubeComponent } from './azure-north/youtube/youtube.component';
+import { EmailFieldComponent } from './azure-north/email-field/email-field.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TextareaModule } from 'primeng/textarea';
+import { FloatLabelModule } from 'primeng/floatlabel';
+import { InputTextModule } from 'primeng/inputtext';
 
 @NgModule({
   declarations: [
@@ -24,6 +29,7 @@ import { YoutubeComponent } from './azure-north/youtube/youtube.component';
     Section3Component,
     Section4Component,
     YoutubeComponent,
+    EmailFieldComponent,
   ],
   imports: [
     CommonModule,
@@ -34,7 +40,12 @@ import { YoutubeComponent } from './azure-north/youtube/youtube.component';
     ButtonModule,
     TagModule,
     DialogModule,
-    SkeletonModule
+    SkeletonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    TextareaModule,
+    FloatLabelModule,
+    InputTextModule
   ],
 })
 export class SanFernandoModule {}
