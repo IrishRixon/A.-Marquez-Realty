@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import Lenis from 'lenis';
 
 @Component({
   selector: 'app-mega-world',
@@ -8,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class MegaWorldComponent {
 
+  ngAfterViewInit(): void {
+    // Initialize Lenis
+    const lenis = new Lenis({
+      autoRaf: true,
+    });
+  }
 }

@@ -63,6 +63,16 @@
     font-weight: styleVariables.$bold;
 }
 
+@font-face {
+    font-family: 'Barbaro';
+    src: url('/assets/fonts/Barbaro/barbaro.ttf') format(truetype);
+}
+
+@font-face {
+    font-family: 'Century';
+    src: url('/assets/fonts/Century/centuryschoolbookbold.ttf') format(truetype);
+}
+
 @layer tailwind-base, primeng, tailwind-utilities;
 
 @layer tailwind-base {
