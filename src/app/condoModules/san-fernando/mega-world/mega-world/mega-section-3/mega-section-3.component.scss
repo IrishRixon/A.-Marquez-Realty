@@ -1,0 +1,136 @@
+@use '../../../../../../styleVariables.scss' as SV;
+
+.wrapper {
+    width: 100%;
+    padding: 100px 100px 0 100px;
+
+    .logo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            font-family: 'Ol Round';
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            color: SV.$savoy;
+
+            span {
+                font-size: 3.8rem;
+                letter-spacing: 0;
+            }
+        }
+
+        h2,
+        h3 {
+            font-family: 'Inter';
+            font-size: 1.2rem;
+            font-weight: SV.$medium;
+        }
+    }
+
+    .section-1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+
+        .image {
+            width: 50%;
+            display: flex;
+            justify-content: start;
+        }
+    
+        .text {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+    
+            h1 {
+                font-family: 'ol Round';
+                font-size: 1.875rem;
+                font-weight: SV.$bold;
+                color: SV.$savoy;
+                letter-spacing: 5px;
+            }
+    
+            p {
+                font-family: 'Inter';
+                color: SV.$text-color;
+                line-height: 2.5rem;
+                opacity: 1;
+            }
+        }
+    }
+
+    .section-2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        height: 600px;
+
+        .images-contaier {
+            width: 50%;
+            height: 100%;
+
+            .images {
+                width: 70%;
+                height: 100%;
+                
+                .col-span-6, .col-span-12 {
+                    height: 300px;
+                }
+            }
+        }
+
+        .text {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            h1 {
+                font-family: 'Poppins';
+                font-size: 1.675rem;
+                font-weight: SV.$bold;
+                color: SV.$text-color;
+                letter-spacing: 5px;
+            }
+
+            ul {
+                font-family: 'Inter';
+                color: SV.$text-color;
+                line-height: 2.5rem;
+                opacity: 1;
+                list-style: disc;
+                list-style-position: inside;
+            }
+        }
+    }
+}
+
+:host ::ng-deep .section-2 p-image {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: start;
+}
+
+:host ::ng-deep .section-2 p-image span {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+}
+
+:host ::ng-deep p-image {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    justify-content: end;
+}
+
+:host ::ng-deep p-image img {
+    border-radius: 10px;
+    object-fit: cover;
+}

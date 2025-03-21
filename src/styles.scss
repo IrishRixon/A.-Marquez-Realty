@@ -73,6 +73,11 @@
     src: url('/assets/fonts/Century/centuryschoolbookbold.ttf') format(truetype);
 }
 
+@font-face {
+    font-family: 'Ol Round';
+    src: url('/assets/fonts/Ol Round/OlRound.ttf') format(truetype);
+}
+
 @layer tailwind-base, primeng, tailwind-utilities;
 
 @layer tailwind-base {

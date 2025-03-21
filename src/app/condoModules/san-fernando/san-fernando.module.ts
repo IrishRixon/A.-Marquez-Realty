@@ -23,6 +23,8 @@ import { InputTextModule } from 'primeng/inputtext';
 import { MegaWorldComponent } from './mega-world/mega-world/mega-world.component';
 import { MegaSection1Component } from './mega-world/mega-world/section-1/section-1.component';
 import { MegaSection2Component } from './mega-world/mega-world/mega-section-2/mega-section-2.component';
+import { MegaSection3Component } from './mega-world/mega-world/mega-section-3/mega-section-3.component';
+import { MegaSection4Component } from './mega-world/mega-world/mega-section-4/mega-section-4.component';
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { MegaSection2Component } from './mega-world/mega-world/mega-section-2/me
     EmailFieldComponent,
     MegaWorldComponent,
     MegaSection1Component,
-    MegaSection2Component
+    MegaSection2Component,
+    MegaSection3Component,
+    MegaSection4Component
   ],
   imports: [
     CommonModule,

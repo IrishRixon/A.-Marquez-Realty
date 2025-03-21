@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MegaSection3Component } from './mega-section-3.component';
+import { MegaSection4Component } from './mega-section-4.component';
 
-describe('MegaSection3Component', () => {
-  let component: MegaSection3Component;
-  let fixture: ComponentFixture<MegaSection3Component>;
+describe('MegaSection4Component', () => {
+  let component: MegaSection4Component;
+  let fixture: ComponentFixture<MegaSection4Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [MegaSection3Component]
+      declarations: [MegaSection4Component]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MegaSection3Component);
+    fixture = TestBed.createComponent(MegaSection4Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
