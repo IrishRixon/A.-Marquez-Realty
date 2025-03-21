@@ -19,6 +19,7 @@ export class ItemsService {
         },
         {
           label: 'Mega World',
+          command: () => this.navigateTo('/condo/sanfernando/megaworld')
         },
       ],
     },

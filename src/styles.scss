@@ -47,6 +47,22 @@
     src: url('/assets/fonts/Pacifio/Pacifico-Regular.ttf') format(truetype);
 }
 
+@font-face {
+    font-family: 'Monotype';
+    src: url('/assets/fonts/Engravers MT Regular/Engravers MT Regular.ttf') format(truetype);
+}
+
+@font-face {
+    font-family: 'Middle age';
+    src: url('/assets/fonts/Middle age/MiddAges.ttf') format(truetype);
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('/assets/fonts/Cormorant/CormorantSC-Bold.ttf') format(truetype);
+    font-weight: styleVariables.$bold;
+}
+
 @layer tailwind-base, primeng, tailwind-utilities;
 
 @layer tailwind-base {

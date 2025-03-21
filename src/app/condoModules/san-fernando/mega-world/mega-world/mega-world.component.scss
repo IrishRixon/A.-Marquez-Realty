@@ -1,0 +1,5 @@
+@use '../../../../../styleVariables.scss' as SV;
+
+.wrapper {
+    background-color: SV.$bg;
+}

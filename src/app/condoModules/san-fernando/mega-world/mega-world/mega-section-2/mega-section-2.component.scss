@@ -1,0 +1,76 @@
+@use '../../../../../../styleVariables.scss' as SV;
+
+.wrapper {
+    width: 100%;
+    padding: 100px 100px 0 100px;
+    background-color: SV.$bg;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+    .container {
+        display: flex;
+        justify-content: center;
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+
+            .image {
+                display: flex;
+                justify-content: end;
+            }
+        }
+
+        .text {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            .montrose {
+                font-family: 'Middle age';
+                color: SV.$montrose; 
+            }
+
+            .chelsea {
+                font-family: 'Cormorant';
+                color: SV.$chelsea;
+                text-transform: uppercase;
+                font-weight: SV.$bold;
+                letter-spacing: 3px;
+
+                span {
+                    text-align: center;
+                    font-family: 'Inter';
+                    font-size: 12px;
+                    color: #83756c;
+                }
+            }
+
+            h1 {
+                font-family: 'Poppins';
+                font-size: 1.875rem;
+                font-weight: SV.$bold;
+                color: #D2B200;
+            }
+
+            p {
+                font-family: 'Inter';
+                color: SV.$text-color;
+                line-height: 2.5rem;
+            }
+        }
+    }
+}
+
+:host ::ng-deep p-image {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    justify-content: end;
+}
+
+:host ::ng-deep p-image img {
+    border-radius: 10px;
+    object-fit: cover;
+}

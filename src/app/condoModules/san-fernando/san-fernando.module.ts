@@ -20,6 +20,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TextareaModule } from 'primeng/textarea';
 import { FloatLabelModule } from 'primeng/floatlabel';
 import { InputTextModule } from 'primeng/inputtext';
+import { MegaWorldComponent } from './mega-world/mega-world/mega-world.component';
+import { MegaSection1Component } from './mega-world/mega-world/section-1/section-1.component';
+import { MegaSection2Component } from './mega-world/mega-world/mega-section-2/mega-section-2.component';
+
 
 @NgModule({
   declarations: [
@@ -30,6 +34,9 @@ import { InputTextModule } from 'primeng/inputtext';
     Section4Component,
     YoutubeComponent,
     EmailFieldComponent,
+    MegaWorldComponent,
+    MegaSection1Component,
+    MegaSection2Component
   ],
   imports: [
     CommonModule,
