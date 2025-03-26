@@ -12,10 +12,15 @@
         display: flex;
         justify-content: center;
 
+        .image {
+            width: 50%;
+        }
+        
         &:nth-child(even) {
             flex-direction: row-reverse;
 
             .image {
+                width: 50%;
                 display: flex;
                 justify-content: end;
             }

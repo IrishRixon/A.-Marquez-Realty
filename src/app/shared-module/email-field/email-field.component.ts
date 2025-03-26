@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { WebsiteFormField } from '../../../../interface/form';
-import { FormsubmissionAPIService } from '../../../../services/formsubmissionAPI/formsubmission-api.service';
+import { WebsiteFormField } from '../../interface/form';
+import { FormsubmissionAPIService } from '../../services/formsubmissionAPI/formsubmission-api.service';
 import {
   FormBuilder,
   FormGroup,

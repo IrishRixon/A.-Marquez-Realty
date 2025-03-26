@@ -1,0 +1,54 @@
+@use "../../../../../styleVariables.scss" as SV;
+@import url("../../../san-fernando/mega-world/mega-world/mega-section-2/mega-section-2.component.scss");
+
+.wrapper {
+    align-items: center !important;
+    padding-top: 200px;
+
+    .one-bedroom-unit {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        h1 {
+            font-size: 3.2rem;
+            font-family: 'Poppins';
+            font-weight: SV.$medium;
+            color: SV.$now-residences-contrast;
+        }
+        img {
+            margin-top: 30px;
+            max-width: 400px;
+            max-height: 500px;
+        }
+    }
+
+    .double-image {
+        .image {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        img {
+            height: 50%;
+        }
+    }
+}
+
+.text {
+
+    h1 {
+        text-align: center;
+        color: SV.$now-residences-contrast !important;
+        font-size: 3rem !important;
+        font-weight: SV.$medium !important;
+    }
+}
+
+:host ::ng-deep p-image {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: end;
+}

@@ -83,6 +83,11 @@
     src: url('/assets/fonts/Eastman/EastmanAlternateTrial-Medium.otf') format(opentype);
 }
 
+@font-face {
+    font-family: 'Dancing';
+    src: url('/assets/fonts/Dancing/DancingScript-VariableFont_wght.ttf') format(truetype); 
+}
+
 @layer tailwind-base, primeng, tailwind-utilities;
 
 @layer tailwind-base {

@@ -14,8 +14,8 @@ import { ButtonModule } from 'primeng/button';
 import { TagModule } from 'primeng/tag';
 import { DialogModule } from 'primeng/dialog';
 import { SkeletonModule } from 'primeng/skeleton';
-import { YoutubeComponent } from './azure-north/youtube/youtube.component';
-import { EmailFieldComponent } from './azure-north/email-field/email-field.component';
+import { YoutubeComponent } from '../../shared-module/youtube/youtube.component';
+import { EmailFieldComponent } from '../../shared-module/email-field/email-field.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TextareaModule } from 'primeng/textarea';
 import { FloatLabelModule } from 'primeng/floatlabel';
@@ -25,6 +25,7 @@ import { MegaSection1Component } from './mega-world/mega-world/section-1/section
 import { MegaSection2Component } from './mega-world/mega-world/mega-section-2/mega-section-2.component';
 import { MegaSection3Component } from './mega-world/mega-world/mega-section-3/mega-section-3.component';
 import { MegaSection4Component } from './mega-world/mega-world/mega-section-4/mega-section-4.component';
+import { SharedModuleModule } from '../../shared-module/shared-module.module';
 
 
 @NgModule({
@@ -34,8 +35,6 @@ import { MegaSection4Component } from './mega-world/mega-world/mega-section-4/me
     Section2Component,
     Section3Component,
     Section4Component,
-    YoutubeComponent,
-    EmailFieldComponent,
     MegaWorldComponent,
     MegaSection1Component,
     MegaSection2Component,
@@ -56,7 +55,8 @@ import { MegaSection4Component } from './mega-world/mega-world/mega-section-4/me
     ReactiveFormsModule,
     TextareaModule,
     FloatLabelModule,
-    InputTextModule
+    InputTextModule,
+    SharedModuleModule,
   ],
 })
 export class SanFernandoModule {}

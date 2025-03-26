@@ -18,6 +18,9 @@ import { NowSection1Component } from './now-residences/now-section-1/now-section
 import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 import { ImageModule } from 'primeng/image';
 import { NowSection2Component } from './now-residences/now-section-2/now-section-2.component';
+import { NowSection3Component } from './now-residences/now-section-3/now-section-3.component';
+import { NowSection4Component } from './now-residences/now-section-4/now-section-4.component';
+import { SharedModuleModule } from '../../shared-module/shared-module.module';
 
 
 @NgModule({
@@ -25,7 +28,9 @@ import { NowSection2Component } from './now-residences/now-section-2/now-section
     TheManansalaComponent,
     NowResidencesComponent,
     NowSection1Component,
-    NowSection2Component
+    NowSection2Component,
+    NowSection3Component,
+    NowSection4Component,
   ],
   imports: [
     CommonModule,
@@ -41,6 +46,7 @@ import { NowSection2Component } from './now-residences/now-section-2/now-section
     ReactiveFormsModule,
     TextareaModule,
     FloatLabelModule,
+    SharedModuleModule,
     InputTextModule
   ]
 })
