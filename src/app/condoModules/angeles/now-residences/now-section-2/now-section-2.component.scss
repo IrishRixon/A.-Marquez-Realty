@@ -1,0 +1,15 @@
+@use '../../../../../styleVariables.scss' as SV;
+@import url('../../../san-fernando/mega-world/mega-world/mega-section-2/mega-section-2.component.scss');
+.wrapper {
+    align-items: center !important;
+}
+
+.now-residences-text {
+    width: 60%;
+    font-family: 'Inter';
+    font-size: 1.2rem;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: SV.$now-residences-contrast;
+}

@@ -9,5 +9,9 @@ export const routes: Routes = [
     {
         path: 'condo/sanfernando',
         loadChildren: () => import('./condoModules/san-fernando/san-fernando.module').then((m) => m.SanFernandoModule)
+    },
+    {
+        path: 'condo/angeles',
+        loadChildren: () => import('./condoModules/angeles/angeles.module').then((m) => m.AngelesModule)
     }
 ];

@@ -34,6 +34,10 @@ export class ItemsService {
         },
         {
           label: '15@boni place'
+        },
+        {
+          label: 'Now Residences',
+          command: () => this.navigateTo('/condo/angeles/nowresidences')
         }
       ],
     },

@@ -78,6 +78,11 @@
     src: url('/assets/fonts/Ol Round/OlRound.ttf') format(truetype);
 }
 
+@font-face {
+    font-family: 'Eastman';
+    src: url('/assets/fonts/Eastman/EastmanAlternateTrial-Medium.otf') format(opentype);
+}
+
 @layer tailwind-base, primeng, tailwind-utilities;
 
 @layer tailwind-base {

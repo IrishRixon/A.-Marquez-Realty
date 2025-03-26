@@ -1,27 +1,39 @@
-<div class="wrapper grid grid-cols-12">
+<div
+  class="wrapper grid grid-cols-12"
+  pAnimateOnScroll
+  enterClass="animate-enter fade-in-10 slide-in-from-b-8 animate-duration-1000"
+  leaveClass="animate-leave fade-out-0"
+>
+  <div class="col-span-4">
+    <p-image
+      src="\assets\images\mega-world\10.jpg"
+      alt="The Biggest Mcdonald’s in the Philippines"
+      width="100%"
+      [preview]="true"
+    />
 
-    <div class="col-span-4">
-        <p-image pAnimateOnScroll enterClass="animate-enter fade-in-10 slide-in-from-l-8 animate-duration-1000"
-            leaveClass="animate-leave fade-out-0" src="\assets\images\mega-world\10.jpg"
-            alt="The Biggest Mcdonald’s in the Philippines" width="100%" [preview]="true" />
+    <p>The Biggest Mcdonald’s in the Philippines</p>
+  </div>
 
-        <p>The Biggest Mcdonald’s in the Philippines</p>
-    </div>
+  <div class="col-span-4">
+    <p-image
+      src="\assets\images\mega-world\11.jpg"
+      alt="Capital Town Clocktower and Sales and Information Center"
+      width="100%"
+      [preview]="true"
+    />
 
-    <div class="col-span-4">
-        <p-image pAnimateOnScroll enterClass="animate-enter fade-in-10 slide-in-from-l-8 animate-duration-1000"
-            leaveClass="animate-leave fade-out-0" src="\assets\images\mega-world\11.jpg"
-            alt="Capital Town Clocktower and Sales and Information Center" width="100%" [preview]="true" />
+    <p>Capital Town Clocktower and Sales and Information Center</p>
+  </div>
 
-        <p>Capital Town Clocktower and Sales and Information Center</p>
-    </div>
+  <div class="col-span-4">
+    <p-image
+      src="\assets\images\mega-world\9.jpg"
+      alt="San Fernando Boulevard"
+      width="100%"
+      [preview]="true"
+    />
 
-    <div class="col-span-4">
-        <p-image pAnimateOnScroll enterClass="animate-enter fade-in-10 slide-in-from-l-8 animate-duration-1000"
-            leaveClass="animate-leave fade-out-0" src="\assets\images\mega-world\9.jpg" alt="San Fernando Boulevard"
-            width="100%" [preview]="true" />
-
-        <p>San Fernando Boulevard</p>
-    </div>
-
+    <p>San Fernando Boulevard</p>
+  </div>
 </div>
