@@ -21,6 +21,11 @@ import { NowSection2Component } from './now-residences/now-section-2/now-section
 import { NowSection3Component } from './now-residences/now-section-3/now-section-3.component';
 import { NowSection4Component } from './now-residences/now-section-4/now-section-4.component';
 import { SharedModuleModule } from '../../shared-module/shared-module.module';
+import { BoniPlaceComponent } from './boni-place/boni-place.component';
+import { BoniSection1Component } from './boni-place/boni-section-1/boni-section-1.component';
+import { BoniSection2Component } from './boni-place/boni-section-2/boni-section-2.component';
+import { BoniSection3Component } from './boni-place/boni-section-3/boni-section-3.component';
+import { BoniSection4Component } from './boni-place/boni-section-4/boni-section-4.component';
 
 
 @NgModule({
@@ -31,6 +36,11 @@ import { SharedModuleModule } from '../../shared-module/shared-module.module';
     NowSection2Component,
     NowSection3Component,
     NowSection4Component,
+    BoniPlaceComponent,
+    BoniSection1Component,
+    BoniSection2Component,
+    BoniSection3Component,
+    BoniSection4Component,
   ],
   imports: [
     CommonModule,

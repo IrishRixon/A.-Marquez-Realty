@@ -33,7 +33,8 @@ export class ItemsService {
           label: 'The bencab'
         },
         {
-          label: '15@boni place'
+          label: '15@boni place',
+          command: () => this.navigateTo('/condo/angeles/boni-place')
         },
         {
           label: 'Now Residences',

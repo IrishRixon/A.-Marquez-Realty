@@ -1,0 +1,91 @@
+@use '../../../../../styleVariables.scss' as SV;
+@import url('../../../san-fernando/mega-world/mega-world/mega-section-2/mega-section-2.component.scss');
+
+.wrapper {
+    align-items: center !important;
+
+    .boni-place-text {
+        font-family: 'Poppins';
+        max-width: 400px;
+        text-align: center;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        line-height: 40px;
+        color: SV.$text-color;
+    }
+
+    .table {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        h1 {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            font-family: 'Inter';
+            font-weight: SV.$bold;
+            font-size: 2.5rem;
+            color: rgb(160, 4, 4);
+        }
+
+        table {
+            font-family: 'Inter';
+            font-size: 1.3rem;
+            font-weight: SV.$medium;
+            width: 50%;
+
+            td {
+                padding: 10px;
+                border: 1px solid SV.$text-color;
+                border-left: 0;
+                border-top: 0;
+                border-right: 0;
+            }
+        }
+
+        ul {
+            width: 50%;
+            font-size: 1.3rem;
+            font-weight: SV.$medium;
+            font-family: 'Inter';
+            list-style: disc;
+            line-height: 40px;
+        }
+    }
+}
+
+.container {
+    margin-top: 200px;
+}
+
+.text {
+    h1 {
+        color: rgb(160, 4, 4) !important;
+        font-weight: SV.$bold !important;
+        font-family: 'Inter' !important;
+        font-size: 2rem !important;
+        text-align: center;
+    }
+}
+
+.double-image {
+    .image {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 600px;
+    }
+
+    p-image {
+        height: 50%;
+    }
+}
+
+:host ::ng-deep p-image {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: end;
+}
