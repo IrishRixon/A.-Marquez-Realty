@@ -13,5 +13,9 @@ export const routes: Routes = [
     {
         path: 'condo/angeles',
         loadChildren: () => import('./condoModules/angeles/angeles.module').then((m) => m.AngelesModule)
+    },
+    {
+        path: 'condo/mexico',
+        loadChildren: () => import('./condoModules/mexico/mexico.module').then((m) => m.MexicoModule)
     }
 ];

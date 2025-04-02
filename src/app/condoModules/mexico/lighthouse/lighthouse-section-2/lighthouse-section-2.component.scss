@@ -1,0 +1,63 @@
+@use '../../../../../styleVariables.scss' as SV;
+@import url('../../../angeles/now-residences/now-section-2/now-section-2.component.scss');
+
+.now-residences-text {
+    color: rgb(56, 55, 55);
+}
+
+.location-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    p-image img {
+        border-radius: 5px;
+    }
+
+    table {
+        width: 50%;
+
+        tr {
+            border: 1px solid white;
+        }
+
+        td {
+            border-left: 1px solid white;
+            padding: 10px;
+            background-color: rgb(166, 49, 49);
+            color: white;
+            font-family: 'Inter';
+
+            &:nth-child(even) {
+                background-color: rgb(56, 55, 55);
+            }
+        }
+    }
+}
+
+.grid {
+    width: 100%;
+    color: rgb(166, 49, 49);
+    text-align: center;
+    justify-items: center;
+
+    img {
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-family: 'Inter';
+        font-weight: SV.$bold;
+    }
+
+    p {
+        font-size: 1.1rem;
+        font-family: 'Inter';
+        font-weight: SV.$medium;
+    }
+}

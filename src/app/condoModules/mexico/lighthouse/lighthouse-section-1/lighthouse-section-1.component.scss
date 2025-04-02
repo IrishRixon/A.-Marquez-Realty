@@ -1,0 +1,12 @@
+@use '../../../../../styleVariables.scss' as SV;
+@import url('../../../angeles/boni-place/boni-section-1/boni-section-1.component.scss');
+
+.wrapper {
+    .lighthouse {
+        img {
+            height: 300px !important;
+            width: 300px !important;
+            object-fit: contain;
+        }
+    }
+}

@@ -46,7 +46,8 @@ export class ItemsService {
       label: 'Mexico',
       items: [
         {
-          label: 'The lighthouse residences'
+          label: 'The lighthouse residences',
+          command: () => this.navigateTo('/condo/mexico/lighthouse')
         }
       ]
     },
