@@ -1,0 +1,31 @@
+@use '../../../../../styleVariables.scss' as SV;
+@import url('../../../angeles/now-residences/now-section-4/now-section-4.component.scss');
+
+.image {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+
+    img {
+        height: 400px;
+        width: 400px;
+        object-fit: fill;
+    }
+}
+
+.one-bedroom-unit {
+    h1 {
+        color: rgb(166, 49, 49) !important;
+    }
+}
+
+ul {
+    list-style: disc;
+    line-height: 40px;
+    font-size: 1.3rem;
+    color: rgb(56, 55, 55);
+
+    li::marker {
+        color: rgb(166, 49, 49);
+    }
+}

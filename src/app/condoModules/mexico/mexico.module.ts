@@ -19,13 +19,17 @@ import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 import { LighthouseSection1Component } from './lighthouse/lighthouse-section-1/lighthouse-section-1.component';
 import { LighthouseSection2Component } from './lighthouse/lighthouse-section-2/lighthouse-section-2.component';
 import { LighthouseSection3Component } from './lighthouse/lighthouse-section-3/lighthouse-section-3.component';
+import { LighthouseSection4Component } from './lighthouse/lighthouse-section-4/lighthouse-section-4.component';
+import { LighthouseSection5Component } from './lighthouse/lighthouse-section-5/lighthouse-section-5.component';
 
 @NgModule({
   declarations: [
     LighthouseComponent,
     LighthouseSection1Component,
     LighthouseSection2Component,
-    LighthouseSection3Component
+    LighthouseSection3Component,
+    LighthouseSection4Component,
+    LighthouseSection5Component
   ],
   imports: [
     CommonModule,
