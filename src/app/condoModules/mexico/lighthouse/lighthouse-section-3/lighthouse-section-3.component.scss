@@ -1,0 +1,108 @@
+@use '../../../../../styleVariables.scss' as SV;
+
+.wrapper {
+    width: 100%;
+    padding: 100px 100px 0 100px;
+    background-color: SV.$bg;
+
+    .image {
+        position: relative;
+        height: 600px;
+        width: 100%;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .text {
+            position: absolute;
+            height: 100%;
+            width: 40%;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+            font-family: 'Inter';
+            font-size: 1.5rem;
+
+            span {
+                color: rgb(214, 14, 14);
+                font-size: 2rem;
+                font-weight: SV.$bold;
+                font-family: 'Dancing';
+                margin: 20px 0;
+                display: block;
+            }
+        }
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Inter';
+        font-weight: SV.$bold;
+        margin: 20px 0;
+        color: rgb(166, 49, 49);
+    }
+
+    .table {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 100px;
+
+        h1 {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            font-family: 'Inter';
+            font-weight: SV.$bold;
+            font-size: 2.5rem;
+            color: rgb(160, 4, 4);
+        }
+
+        table {
+            font-family: 'Inter';
+            font-size: 1.3rem;
+            font-weight: SV.$medium;
+            width: 50%;
+
+            td {
+                padding: 10px;
+                border: 1px solid SV.$text-color;
+                border-left: 0;
+                border-top: 0;
+                border-right: 0;
+            }
+        }
+
+        ul {
+            width: 50%;
+            font-size: 1.3rem;
+            font-weight: SV.$medium;
+            font-family: 'Inter';
+            list-style: disc;
+            line-height: 40px;
+        }
+    }
+
+    .table.text {
+        h1 {
+            width: 50%;
+            font-size: 1.5rem;
+        }
+
+        p {
+            width: 50%;
+            font-size: 1rem;
+            font-family: 'Inter';
+            line-height: 40px;
+        }
+
+        
+    }
+}

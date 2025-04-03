@@ -18,12 +18,14 @@ import { SharedModuleModule } from '../../shared-module/shared-module.module';
 import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 import { LighthouseSection1Component } from './lighthouse/lighthouse-section-1/lighthouse-section-1.component';
 import { LighthouseSection2Component } from './lighthouse/lighthouse-section-2/lighthouse-section-2.component';
+import { LighthouseSection3Component } from './lighthouse/lighthouse-section-3/lighthouse-section-3.component';
 
 @NgModule({
   declarations: [
     LighthouseComponent,
     LighthouseSection1Component,
-    LighthouseSection2Component
+    LighthouseSection2Component,
+    LighthouseSection3Component
   ],
   imports: [
     CommonModule,
