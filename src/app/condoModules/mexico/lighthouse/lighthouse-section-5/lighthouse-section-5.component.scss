@@ -1,0 +1,49 @@
+@use '../../../../../styleVariables.scss' as SV;
+
+.wrapper {
+    width: 100%;
+    padding: 100px 100px 0 100px;
+    background-color: SV.$bg;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+
+    .first-grid {
+        h1.col-span-12 {
+            font-family: 'Inter';
+            font-size: 2rem;
+            color: rgb(166, 49, 49);
+            text-align: center;
+            font-weight: SV.$bold;
+        }
+    
+        .col-span-4 h2 {
+            text-align: center;
+            color: white;
+            background-color: rgb(166, 49, 49);
+            font-size: 1.3rem;
+        }
+    }
+
+    img {
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .grids {
+        h1 {
+            font-size: 2rem;
+            font-family: 'Inter';
+            font-weight: SV.$bold;
+            color: rgb(214, 14, 14);
+            text-align: center;
+        }
+
+        p {
+            font-size: 1rem;
+            font-family: 'Inter';   
+            line-height: 40px;
+        }
+    }
+}

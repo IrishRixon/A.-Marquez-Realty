@@ -1,13 +1,85 @@
 @use '../styleVariables.scss' as SV;
 
+.sm-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    height: 100px;
+    background-image: linear-gradient(to bottom, white, transparent);
+    padding: 10px 20px;
+    display: none;
+}
+
+:host ::ng-deep .sm-header .p-button-icon-only.p-button-rounded {
+    height: 50px !important;
+    width: 50px !important;
+    color: SV.$sixty;
+
+    &:hover {
+        background-color: SV.$sixty;
+        color: white;
+    }
+
+    &:active {
+        background-color: SV.$sixty;
+        color: white;
+    }
+}
+
+:host ::ng-deep .sm-header p-button span {
+    font-size: 1.5rem;
+
+}
+
+/**********/
 header {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 5;
+
+    .btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+    }
 }
 
 footer {
     padding-top: 100px;
     background-color: SV.$bg;
+}
+
+@media (max-width: 1024px) {
+
+    .sm-header {
+        display: block;
+    }
+
+    header {
+        left: 0;
+        height: 100%;
+        width: 300px;
+        overflow: hidden;
+        transition: 0.5s;
+
+        .btn {
+            display: block;
+            color: white;
+        }
+    }
+
+    header.close {
+        width: 0px;
+    }
+
+    :host ::ng-deep .p-button-text {
+        color: white;
+
+        &:hover {
+            color: SV.$sixty;
+        }
+    }
 }

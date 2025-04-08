@@ -53,7 +53,7 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin-bottom: 100px;
+        margin-top: 100px;
 
         h1 {
             width: 50%;
@@ -61,7 +61,7 @@
             justify-content: center;
             font-family: 'Inter';
             font-weight: SV.$bold;
-            font-size: 2.5rem;
+            font-size: 2rem;
             color: rgb(160, 4, 4);
         }
 
@@ -93,7 +93,7 @@
     .table.text {
         h1 {
             width: 50%;
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
 
         p {
@@ -102,5 +102,11 @@
             font-family: 'Inter';
             line-height: 40px;
         }
+    }
+
+    .hotel-perks, 
+    .dependent {
+        margin-top: 200px;
+        font-size: 2.5rem;
     }
 }

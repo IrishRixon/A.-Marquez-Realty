@@ -34,7 +34,7 @@ export class NavbarComponent {
         const scrollPosition = this.viewportScroller.getScrollPosition();
         const verticalPosition = scrollPosition[1];
 
-        if (verticalPosition >= 70) {
+        if (verticalPosition >= 70 || window.innerWidth < 1024) {
           this.renderer.addClass(this.nav.nativeElement, 'fully-visible');
         } else {
           this.renderer.removeClass(this.nav.nativeElement, 'fully-visible');
@@ -51,6 +51,10 @@ export class NavbarComponent {
 
   ngAfterViewInit(): void {
     this.navColorBasedOnScroll();
+    
+    if ( window.innerWidth < 1024) {
+      this.renderer.addClass(this.nav.nativeElement, 'fully-visible');
+    }
   }
 
   ngOnInit(): void {

@@ -1,6 +1,14 @@
 <div class="wrapper">
-  <header>
+  <div class="sm-header">
+    <p-button icon="pi pi-bars" [rounded]="true" [text]="true" (onClick)="openHeader()"/>
+  </div>
+
+  <header #header class="close">
     <app-navbar></app-navbar>
+
+    <div class="btn">
+      <p-button icon="pi pi-times" [rounded]="true" [text]="true" severity="secondary" (onClick)="closeHeader()"/>
+    </div>
   </header>
   
   <article>

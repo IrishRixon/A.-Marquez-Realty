@@ -1,6 +1,12 @@
 @use '../../../../../styleVariables.scss' as SV;
 @import url('../../../angeles/now-residences/now-section-4/now-section-4.component.scss');
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
 .image {
     display: flex;
     gap: 20px;

@@ -66,3 +66,9 @@ article {
     }
   }
 }
+
+@media (max-width: 1024px) {
+  article {
+    padding: 100px 50px 50px 50px;
+  }
+}

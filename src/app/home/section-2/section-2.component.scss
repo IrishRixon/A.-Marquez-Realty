@@ -84,3 +84,32 @@
 :host ::ng-deep .p-galleria-indicator-active .p-galleria-indicator-button {
     background-color: SV.$sixty;
 }
+
+@media (max-width: 1024px) {
+    .wrapper {
+        padding: 50px 50px 0 50px;
+        flex-direction: column;
+        gap: 100px;
+        height: auto;
+
+        .text {
+            width: 100%;
+        }
+
+        div.image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    }
+
+    .welcome {
+        display: block !important;
+    }
+
+    :host ::ng-deep p-galleria {
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -69,3 +69,31 @@ nav.fully-visible {
 :host ::ng-deep .condo p-tieredmenu ul{
     left: -100% !important;
 }
+
+@media (max-width: 1024px) {
+    nav {
+        height: 100%;
+        padding: 40px 20px;
+        justify-content: flex-start;
+        width: 300px;
+    }
+
+    ul {
+        width: 100%;
+        margin-top: 40px;
+        gap: 0 !important;
+
+        li {
+            border-top: 1px solid white;
+        }
+    }
+
+    ul, nav {
+        flex-direction: column;
+    }
+
+    :host ::ng-deep p-button button {
+        width: 100%;
+        padding: 20px;
+    }
+}
