@@ -23,8 +23,8 @@ import Lenis from 'lenis';
 export class HomeComponent {
   ngAfterViewInit(): void {
     // Initialize Lenis
-    const lenis = new Lenis({
-      autoRaf: true,
-    });
+    // const lenis = new Lenis({
+    //   autoRaf: true,
+    // });
   }
 }

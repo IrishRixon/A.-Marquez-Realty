@@ -44,11 +44,12 @@
             h1 {
                 font-size: 3rem;
                 font-weight: SV.$light;
-                
+
                 span {
                     font-weight: SV.$bold;
                 }
             }
+
             h2 {
                 font-size: 20px;
                 font-weight: SV.$light;
@@ -68,4 +69,21 @@
 
 :host ::ng-deep p-image img {
     border-radius: 10px;
+}
+
+@media(max-width: 1024px) {
+    .wrapper {
+        padding: 0 50px 0 50px;
+        flex-direction: column;
+        gap: 100px;
+
+        .left, .right {
+            width: 100%;
+            gap: 20px;
+        }
+
+        .text {
+            gap: 10px;
+        }
+    }
 }

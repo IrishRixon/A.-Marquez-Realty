@@ -40,3 +40,17 @@
         filter: opacity(0.1);
     }
 }
+
+@media(max-width: 640px) {
+    .wrapper {
+        height: 100%;
+        justify-items: center;
+        text-align: center;
+
+        .contact-us, .follow-us {
+            p {
+                justify-content: center;
+            }
+        }
+    }
+}
