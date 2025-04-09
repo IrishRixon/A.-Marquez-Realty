@@ -15,7 +15,6 @@ import { SharedModuleModule } from '../../shared-module/shared-module.module';
 import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 
 import { AngelesRoutingModule } from './angeles-routing.module';
-import { TheManansalaComponent } from './the-manansala/the-manansala.component';
 import { NowResidencesComponent } from './now-residences/now-residences.component';
 import { NowSection1Component } from './now-residences/now-section-1/now-section-1.component';
 import { NowSection2Component } from './now-residences/now-section-2/now-section-2.component';
@@ -30,7 +29,6 @@ import { BoniSection4Component } from './boni-place/boni-section-4/boni-section-
 
 @NgModule({
   declarations: [
-    TheManansalaComponent,
     NowResidencesComponent,
     NowSection1Component,
     NowSection2Component,

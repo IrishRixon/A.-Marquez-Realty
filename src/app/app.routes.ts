@@ -17,5 +17,5 @@ export const routes: Routes = [
     {
         path: 'condo/mexico',
         loadChildren: () => import('./condoModules/mexico/mexico.module').then((m) => m.MexicoModule)
-    }
+    }, 
 ];

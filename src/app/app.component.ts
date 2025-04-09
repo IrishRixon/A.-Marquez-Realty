@@ -1,5 +1,5 @@
 import { Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet, Scroll } from '@angular/router';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { PrimeNG } from 'primeng/config';
 import Aura from '@primeng/themes/aura';
@@ -15,7 +15,7 @@ import { ButtonModule } from 'primeng/button';
 export class AppComponent {
   title = 'ARealty';
 
-  constructor(private primeng: PrimeNG, private renderer: Renderer2) {
+  constructor(private primeng: PrimeNG, private renderer: Renderer2, private router: Router) {
     this.primeng.theme.set({
       preset: Aura,
       options: {
