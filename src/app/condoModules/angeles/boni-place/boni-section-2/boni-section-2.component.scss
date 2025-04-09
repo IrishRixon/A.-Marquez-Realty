@@ -89,3 +89,20 @@
     height: 100%;
     justify-content: end;
 }
+
+@media(max-width: 1024px) {
+    .table {
+        flex-direction: column;
+        row-gap: 50px;
+
+        h1, table, ul {
+            width: 100% !important;
+            text-align: center;
+        }
+    } 
+
+    .container {
+        flex-direction: column-reverse !important;
+        margin-top: 0;
+    }
+}

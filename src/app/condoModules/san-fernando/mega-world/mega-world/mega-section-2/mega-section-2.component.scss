@@ -15,7 +15,7 @@
         .image {
             width: 50%;
         }
-        
+
         &:nth-child(even) {
             flex-direction: row-reverse;
 
@@ -34,7 +34,7 @@
 
             .montrose {
                 font-family: 'Middle age';
-                color: SV.$montrose; 
+                color: SV.$montrose;
                 text-transform: uppercase;
 
                 span {
@@ -63,7 +63,7 @@
 
             .bryant {
                 font-family: 'Barbaro';
-                color: SV.$bryant; 
+                color: SV.$bryant;
                 text-transform: uppercase;
                 letter-spacing: 3px;
 
@@ -78,7 +78,7 @@
 
             .shop-house {
                 font-family: 'Century';
-                color: rgb(161, 158, 158); 
+                color: rgb(161, 158, 158);
                 text-transform: uppercase;
                 letter-spacing: 3px;
 
@@ -113,4 +113,40 @@
 :host ::ng-deep p-image img {
     border-radius: 10px;
     object-fit: cover;
+}
+
+@media(max-width: 1024px) {
+    .wrapper {
+        padding: 100px 50px 0 50px;
+        align-items: center;
+
+        .container {
+            flex-direction: column;
+            text-align: center;
+
+            .image,
+            .text {
+                width: 100%;
+            }
+
+            .image {
+                display: flex;
+                justify-content: center;
+            }
+
+            &:nth-child(even) {
+                flex-direction: column;
+
+                .image,
+                .text {
+                    width: 100%;
+                }
+
+                .image {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
 }

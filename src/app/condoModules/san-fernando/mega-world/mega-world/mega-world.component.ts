@@ -11,8 +11,8 @@ export class MegaWorldComponent {
 
   ngAfterViewInit(): void {
     // Initialize Lenis
-    const lenis = new Lenis({
-      autoRaf: true,
-    });
+    // const lenis = new Lenis({
+    //   autoRaf: true,
+    // });
   }
 }

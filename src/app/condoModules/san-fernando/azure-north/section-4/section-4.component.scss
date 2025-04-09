@@ -33,3 +33,9 @@
 .carousel-button:hover {
     background-color: rgba(0, 0, 0, 0.052);
 }
+
+@media(max-width: 1024px) {
+    .wrapper {
+        padding: 0;
+    }
+}
