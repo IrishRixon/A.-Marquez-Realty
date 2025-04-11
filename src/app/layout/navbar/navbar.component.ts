@@ -27,6 +27,7 @@ export class NavbarComponent {
   @ViewChild('nav') nav!: ElementRef;
 
   condoItems!: MenuItem[];
+  underDevelopment!: MenuItem[];
 
   navColorBasedOnScroll() {
     this.scrollDispatcher.scrolled().subscribe(() => {
@@ -59,5 +60,6 @@ export class NavbarComponent {
 
   ngOnInit(): void {
     this.condoItems = this.itemsService.condoItems;
+    this.underDevelopment = this.itemsService.underDevelopment;
   }
 }

@@ -5,7 +5,7 @@
     <li><p-button label="Home" (onClick)="navigateToHome()"/></li>
     <li>
       <p-button label="House and Lot" (click)="houseLot.toggle($event)" />
-      <p-tieredmenu #houseLot [model]="condoItems" [popup]="true" />
+      <p-tieredmenu #houseLot [model]="underDevelopment" [popup]="true" />
     </li>
     <li class="condo">
       <p-button label="Condo" (click)="condo.toggle($event)" />
@@ -13,7 +13,7 @@
     </li>
     <li>
       <p-button label="Other properties" (click)="other.toggle($event)" />
-      <p-tieredmenu #other [model]="condoItems" [popup]="true" />
+      <p-tieredmenu #other [model]="underDevelopment" [popup]="true" />
     </li>
   </ul>
 </nav>

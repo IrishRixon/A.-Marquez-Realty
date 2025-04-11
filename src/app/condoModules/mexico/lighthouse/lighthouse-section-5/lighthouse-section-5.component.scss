@@ -17,6 +17,7 @@
             font-weight: SV.$bold;
         }
     
+        .col-span-12 h2,
         .col-span-4 h2 {
             text-align: center;
             color: white;
@@ -44,6 +45,18 @@
             font-size: 1rem;
             font-family: 'Inter';   
             line-height: 40px;
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .wrapper {
+        padding: 100px 50px 0 50px;
+
+        .grids {
+            p {
+                text-align: center;
+            }
         }
     }
 }

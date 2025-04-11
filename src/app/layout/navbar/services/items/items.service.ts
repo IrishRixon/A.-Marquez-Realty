@@ -8,7 +8,11 @@ import { Router } from '@angular/router';
 export class ItemsService {
   constructor(private router: Router) { }
 
-
+  underDevelopment: MenuItem[] = [
+    {
+      label: 'Apologies, this section is under development',
+    }
+  ]
   condoItems: MenuItem[] = [
     {
       label: 'San fernando',
@@ -26,12 +30,6 @@ export class ItemsService {
     {
       label: 'Angeles',
       items: [
-        {
-          label: 'Manansala',
-        },
-        {
-          label: 'The bencab'
-        },
         {
           label: '15@boni place',
           command: () => this.navigateTo('/condo/angeles/boni-place')

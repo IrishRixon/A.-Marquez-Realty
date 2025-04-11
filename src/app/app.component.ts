@@ -5,6 +5,7 @@ import { PrimeNG } from 'primeng/config';
 import Aura from '@primeng/themes/aura';
 import { FooterComponent } from './layout/footer/footer.component';
 import { ButtonModule } from 'primeng/button';
+import Lenis from 'lenis';
 
 @Component({
   selector: 'app-root',
@@ -37,4 +38,11 @@ export class AppComponent {
   openHeader() {
     this.renderer.removeClass(this.header.nativeElement, 'close')
   }
-}
+
+  ngAfterViewInit(): void {
+    // Initialize Lenis 
+    // const lenis = new Lenis({
+    //   autoRaf: true,
+    // });
+  }
+} 

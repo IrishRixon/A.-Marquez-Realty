@@ -35,3 +35,17 @@ ul {
         color: rgb(166, 49, 49);
     }
 }
+
+@media(max-width: 1024px) {
+    .wrapper {
+        text-align: center;
+        .one-bedroom-unit {
+            width: 100%;
+
+            .image {
+                flex-direction: column;
+            }
+        }
+    }
+
+}

@@ -110,3 +110,24 @@
         font-size: 2.5rem;
     }
 }
+
+@media(max-width: 1024px) {
+    .wrapper {
+        padding: 100px 50px 0 50px;
+
+        .image {
+            .text {
+                width: 100%;
+            }
+        }
+
+        .table, .table.text {
+            flex-direction: column;
+
+            h1, table, ul, p {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}

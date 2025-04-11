@@ -52,3 +52,18 @@
         }
     }
 }
+
+@media(max-width: 1024px) {
+    .wrapper {
+        padding: 100px 50px 0 50px;
+
+        .table {
+            flex-direction: column;
+            row-gap: 40px;
+
+            h1, table, ul {
+                width: 100%;
+            }
+        }
+    }
+}

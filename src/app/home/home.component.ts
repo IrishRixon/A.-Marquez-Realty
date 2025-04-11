@@ -27,4 +27,8 @@ export class HomeComponent {
     //   autoRaf: true,
     // });
   }
+
+  ngOnInit(): void {
+    window.scroll(0, 0);
+  }
 }

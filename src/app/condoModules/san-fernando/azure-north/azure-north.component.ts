@@ -28,11 +28,4 @@ export class AzureNorthComponent {
     this.showOverlay = true;
     this.selectedProduct = event;
   }
-
-  ngAfterViewInit(): void {
-    // Initialize Lenis
-    // const lenis = new Lenis({
-    //   autoRaf: true,
-    // });
-  }
 }
