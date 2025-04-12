@@ -2,5 +2,6 @@
 <app-section-2></app-section-2>
 <app-our-services-section></app-our-services-section>
 <app-testimonials></app-testimonials>
-<app-email-field></app-email-field>
+<app-email-field (message)="emittedMessage($event)"></app-email-field>
 <app-our-team></app-our-team>
+<p-toast />

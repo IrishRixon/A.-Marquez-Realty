@@ -6,6 +6,9 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { EmailFieldComponent } from './email-field/email-field.component';
 import { OurTeamComponent } from './our-team/our-team.component';
 import Lenis from 'lenis';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
+import { Message } from '../interface/message';
 
 @Component({
   selector: 'app-home',
@@ -15,12 +18,20 @@ import Lenis from 'lenis';
     OurServicesSectionComponent,
     TestimonialsComponent,
     EmailFieldComponent,
-    OurTeamComponent
+    OurTeamComponent,
+    ToastModule
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
+  providers: [MessageService]
 })
 export class HomeComponent {
+  constructor(private messageService: MessageService) {}
+
+  emittedMessage(event: Message) {
+    this.messageService.add(event);
+  }
+
   ngAfterViewInit(): void {
     // Initialize Lenis
     // const lenis = new Lenis({

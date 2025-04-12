@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { AnimateOnScrollModule } from 'primeng/animateonscroll';
+import { Message } from '../../interface/message';
 
 @Component({
   selector: 'app-our-services-section',
@@ -8,5 +9,5 @@ import { AnimateOnScrollModule } from 'primeng/animateonscroll';
   styleUrl: './our-services-section.component.scss'
 })
 export class OurServicesSectionComponent {
-
+  
 }

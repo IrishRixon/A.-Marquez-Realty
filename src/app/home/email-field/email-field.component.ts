@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { InputTextModule } from 'primeng/inputtext';
 import {
   FormsModule,
@@ -13,6 +13,7 @@ import { ButtonModule } from 'primeng/button';
 import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 import { WebsiteFormField } from '../../interface/form';
 import { FormsubmissionAPIService } from '../../services/formsubmissionAPI/formsubmission-api.service';
+import { Message } from '../../interface/message';
 
 @Component({
   selector: 'app-email-field',
@@ -34,6 +35,9 @@ export class EmailFieldComponent {
     private formSubmit: FormsubmissionAPIService
   ) {}
 
+  @Output() message: EventEmitter<Message> = new EventEmitter<Message>;
+
+  sendEmailTimeout: boolean = false;
   emailContent!: FormGroup;
 
   onSubmit() {
@@ -45,10 +49,39 @@ export class EmailFieldComponent {
       message: message,
     };
 
-    this.formSubmit.formSubmit('https://formspree.io/f/mqaevrvd', value)
-    .subscribe((res) => {
-      console.log(res);
+    if(!this.sendEmailTimeout) {
+      this.formSubmit.formSubmit('https://formspree.io/f/mqaevrvd', value)
+    .subscribe({
+      next: (res) => {
+        const message: Message = {
+          severity: 'success',
+          summary: 'Success',
+          detail: 'Message sent successfully!',
+          life: 3000
+        } 
+        this.emitMessage(message);
+        this.sendEmailTimeout = true;
+
+        
+        setTimeout(() => {
+          this.sendEmailTimeout = false;
+        }, 10000);
+      },
+      error: (err) => {
+        const message: Message = {
+          severity: 'error',
+          summary: 'Error',
+          detail: `${err}`,
+          life: 3000
+        }
+        this.emitMessage(message);
+      }
     });
+    }
+  }
+
+  emitMessage(message: Message) {
+    this.message.emit(message)
   }
 
   ngOnInit(): void {
