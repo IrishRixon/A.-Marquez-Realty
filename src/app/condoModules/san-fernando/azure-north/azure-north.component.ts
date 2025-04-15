@@ -9,7 +9,9 @@ import { Product } from './section-4/interface/product';
   styleUrl: './azure-north.component.scss',
 })
 export class AzureNorthComponent {
-  constructor(private renderer: Renderer2) {}
+  constructor(private renderer: Renderer2) {
+    
+  }
 
   @ViewChild('head') head!: ElementRef;
   @ViewChild('para') para!: ElementRef;

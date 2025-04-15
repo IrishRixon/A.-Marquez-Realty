@@ -1,5 +1,5 @@
 import { Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
-import { Router, RouterOutlet, Scroll } from '@angular/router';
+import { NavigationEnd, Router, RouterOutlet, Scroll } from '@angular/router';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { PrimeNG } from 'primeng/config';
 import Aura from '@primeng/themes/aura';
@@ -27,6 +27,19 @@ export class AppComponent {
         darkModeSelector: '.my-app-dark',
       },
     });
+
+    this.router.events.subscribe((event) => {
+      if(event instanceof NavigationEnd) {
+        console.log('scroll');
+        window.scrollTo({
+          top: 0,
+          behavior: 'auto'
+        });
+
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      }
+    })
   }
 
   @ViewChild('header') header!: ElementRef;
