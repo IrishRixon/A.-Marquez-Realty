@@ -63,3 +63,10 @@
         flex-direction: column-reverse !important;
     }
 }
+
+@media(max-width: 468px) {
+    .wrapper {
+
+        text-align: center;
+    }
+}

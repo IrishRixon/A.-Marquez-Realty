@@ -1,1 +1,8 @@
 @import url('../../../angeles/now-residences/now-section-3/now-section-3.component.scss');
+
+@media(max-width: 468px) {
+    .wrapper {
+
+        text-align: center;
+    }
+}

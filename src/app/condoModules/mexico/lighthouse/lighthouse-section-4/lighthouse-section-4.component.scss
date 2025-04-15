@@ -49,3 +49,10 @@ ul {
     }
 
 }
+
+@media(max-width: 468px) {
+    img {
+        width: 100% !important;
+        object-fit: cover !important;
+    }
+}
