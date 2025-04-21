@@ -9,12 +9,12 @@ export class ProductsService {
 
   products: Product[] = [
     {
-      image: '/assets/images/azure/6.jpg',
+      image: '/assets/images/azure/6.webp',
       head: 'THE SUN, THE SAND, THE SEA',
       body: ' Everything you need for a holiday every day await you in San Fernando, Pampanga Discover a secret beach cove and more at AZURE NORTH',
     },
     {
-      image: '/assets/images/azure/8.jpg',
+      image: '/assets/images/azure/8.webp',
       head: 'THE BEST OF PAMPANGA <br> Right at the exit of NLEX',
       body: `Good food, fine furniture, colorful Good food, fine furniture, colorful festivities, a flair for the finer things in life Kapampangans sure know how to live it up. And there’s no better place to experience the good life in Pampanga than in the capital city of San Fernando. And now that the Skyway extension to the North Luzon Expressway is completed, Azure North is approximately just 90 minutes away from Makati`,
     },
@@ -46,7 +46,7 @@ residences, AZURE NORTH is a paradise waiting to be discovered at the heart of P
 `,
     },
     {
-      image: '/assets/images/azure/18.jpg',
+      image: '/assets/images/azure/18.webp',
       head: 'THE AZURE NORTH BEACH',
       body: `A secret beach cove in the middle of a resort residential development — 
 the first of its kind in Northern Luzon. <br><br>
@@ -57,12 +57,12 @@ amenities — nestled in the heart of this bustling new metropolis.
 having to leave`,
     },
     {
-      image: '/assets/images/azure/19.jpg',
+      image: '/assets/images/azure/19.webp',
       head: `CATCH A WAVE IN SAN FERNANDO`,
       body: `Get Swept Away at the Wave Pool at Azure North. Undulating Waves Create the Perfect Ocean-Inspired Residential Experience`,
     },
     {
-      image: '/assets/images/azure/20.jpg',
+      image: '/assets/images/azure/20.webp',
       head: `AZURE NORTH’S 
 LUXURIOUS RESORT 
 AMENITIES`,
@@ -74,7 +74,7 @@ AMENITIES`,
     </ul>`,
     },
     {
-      image: '/assets/images/azure/21.jpg',
+      image: '/assets/images/azure/21.webp',
       head: `THE RESORT RESIDENCES AT
  AZURE NORTH`,
       body: ` Three majestic towers that stand 

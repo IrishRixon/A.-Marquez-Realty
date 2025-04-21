@@ -9,26 +9,26 @@ export class PhotoService {
   constructor() { }
 
   photos: Photo[] = [{
-    itemImageSrc: '/assets/images/4pics1.png',
-    thumbnailImageSrc: '/assets/images/4pics1.png',
+    itemImageSrc: '/assets/images/4pics1.webp',
+    thumbnailImageSrc: '/assets/images/4pics1.webp',
     alt: 'desc',
     title: 'Montrose Parkview'
   },
   {
-    itemImageSrc: '/assets/images/4pics2.png',
-    thumbnailImageSrc: '/assets/images/4pics2.png',
+    itemImageSrc: '/assets/images/4pics2.webp',
+    thumbnailImageSrc: '/assets/images/4pics2.webp',
     alt: 'desc',
     title: 'Chelsea Parkplace Capital Town Pampanga'
   },
   {
-    itemImageSrc: '/assets/images/4pics3.png',
-    thumbnailImageSrc: '/assets/images/4pics3.png',
+    itemImageSrc: '/assets/images/4pics3.webp',
+    thumbnailImageSrc: '/assets/images/4pics3.webp',
     alt: 'desc',
     title: 'Bryant Parklane Capital Town Pampanga'
   },
   {
-    itemImageSrc: '/assets/images/4pics4.png',
-    thumbnailImageSrc: '/assets/images/4pics4.png',
+    itemImageSrc: '/assets/images/4pics4.webp',
+    thumbnailImageSrc: '/assets/images/4pics4.webp',
     alt: 'desc',
     title: 'Shophouse District'
   }
