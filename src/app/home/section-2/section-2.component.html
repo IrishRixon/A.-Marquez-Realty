@@ -69,11 +69,10 @@
         <img [src]="item.itemImageSrc" style="width: 100%; display: block" />
       </ng-template>
       <ng-template #thumbnail let-item>
-        <img [src]="item.thumbnailImageSrc" style="display: block" />
+        <img [src]="item.thumbnailImageSrc" style="display: block" [alt]="item.alt"/>
       </ng-template>
       <ng-template #caption let-item>
         <div class="">{{ item.title }}</div>
-        <p class="">{{ item.alt }}</p>
       </ng-template>
     </p-galleria>
   </div>
