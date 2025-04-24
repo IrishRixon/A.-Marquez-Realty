@@ -7,10 +7,56 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
-<url>
+<!-- <url>
   <loc>https://amarquezrealty.netlify.app/</loc>
   <lastmod>2025-04-23T11:12:34+00:00</lastmod>
-</url>
+</url> -->
 
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> -->
 
+  <!-- Root/homepage -->
+  <url>
+    <loc>https://amarquezrealty.netlify.app/</loc>
+    <lastmod>2023-08-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- SanFernandoModule routes -->
+  <url>
+    <loc>https://amarquezrealty.netlify.app/condo/sanfernando/azurenorth</loc>
+    <lastmod>2023-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://amarquezrealty.netlify.app/condo/sanfernando/megaworld</loc>
+    <lastmod>2023-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- MexicoModule routes -->
+  <url>
+    <loc>https://yourdomain.com/condo/mexico/lighthouse</loc>
+    <lastmod>2023-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- AngelesModule routes -->
+  <url>
+    <loc>https://yourdomain.com/condo/angeles/nowresidences</loc>
+    <lastmod>2023-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/condo/angeles/boni-place</loc>
+    <lastmod>2023-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
+
