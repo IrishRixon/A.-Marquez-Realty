@@ -30,8 +30,8 @@
                 "glob": "**/*",
                 "input": "public"
               },
-              "robots.txt",
-              "sitemap.xml"
+              "src/robots.txt",
+              "src/sitemap.xml"
             ],
             "styles": [
               "src/styles.scss"
