@@ -29,7 +29,9 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "robots.txt",
+              "sitemap.xml"
             ],
             "styles": [
               "src/styles.scss"
