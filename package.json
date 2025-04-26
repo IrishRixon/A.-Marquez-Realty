@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:ARealty": "node dist/arealty/server/server.mjs"
+    "serve:ssr:ARealty": "node dist/arealty/server/server.mjs",
+    "build:ssr": "ng build --configuration production && ng run arealty:server:production"
   },
   "private": true,
   "dependencies": {

@@ -5,6 +5,11 @@
   to = "/robots.txt"
   status = 200
 
+
+[build]
+  command = "npm run build:ssr && npm run netlify:copy-server"
+  publish = "dist/arealty/browser"
+
 # 2. Serve robots.txt as plain text (prevents HTML syntax errors)
 [[headers]]
   for = "/robots.txt"
