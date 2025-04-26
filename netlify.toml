@@ -9,7 +9,7 @@
 [build]
 command = "npm install --legacy-peer-deps && npm run build"
 functions = "netlify/functions"
-publish = "dist/angular-ssr/browser"
+publish = "dist/arealty/browser"
 
 # 2. Serve robots.txt as plain text (prevents HTML syntax errors)
 [[headers]]
